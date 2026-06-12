@@ -22,6 +22,7 @@ jobs:
           flake8 app.py
   Unit-tests:
     name: Unit tests
+    needs: linting
     runs-on: ubuntu-latest
     steps:
       - name: code checkout
